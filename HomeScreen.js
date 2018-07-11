@@ -18,11 +18,13 @@ export default class HomeScreen extends React.Component {
     componentDidMount() {
         this.subs = [
             this.props.navigation.addListener('willFocus', payload => {
-                console.log(payload);
+                console.log('>>> willFocus');
                 this._deselectButton(false)}),
+
             this.props.navigation.addListener('didFocus', () => {
-                console.log('didFocus');
+                console.log('>>> didFocus');
                 this._deselectButton(false)}),
+
             // this.props.navigation.addListener('didBlur', () => {
             //     console.log('willBlur');
             //     this._deselectButton(false)}),
@@ -57,6 +59,7 @@ export default class HomeScreen extends React.Component {
     }
 
     render() {
+        console.log('RENDER');
         return (
             <TouchableHighlight
                 style={this.state.isButtonPressed ? styles.buttonPressed : styles.button}
