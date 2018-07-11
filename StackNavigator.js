@@ -2,12 +2,16 @@ import React from 'react';
 import {createStackNavigator} from "react-navigation";
 import BackButton from "./BackButton";
 import HomeScreen from "./HomeScreen";
+import {SecondScreen} from "./SecondScreen";
 
 
 const StackNavigator = createStackNavigator({
 
     HomeScreen: {
         screen: HomeScreen
+    },
+    SecondScreen: {
+        screen: SecondScreen
     }
 
 }, {

@@ -36,7 +36,7 @@ export default class HomeScreen extends React.Component {
     }
 
     _navigateToSecondScreen = () => {
-        this.props.navigation.navigate("ProfileSettings");
+        this.props.navigation.navigate("SecondScreen");
 
         this._changeButtonPressedState(true);
     };
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     },
     buttonPressed: {
         flex: 0,
-        backgroundColor: '#E1E4E6'
+        backgroundColor: 'red'
     },
     buttonText: {
         color: '#000000',

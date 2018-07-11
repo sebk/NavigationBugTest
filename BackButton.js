@@ -6,7 +6,7 @@ export default class BackButton extends Component {
     render() {
         return (
             <TouchableOpacity onPress={this.props.onPress}>
-                <Text>Back</Text>
+                <Text>BACK</Text>
             </TouchableOpacity>
         )
     }
