@@ -6,5 +6,5 @@ export default createDrawerNavigator({
 
     StackNavigator: {
         screen: StackNavigator
-    },
+    }
 });
